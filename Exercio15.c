@@ -3,7 +3,7 @@
 int main(){
 char prova [5][10];
 char gabarito[10];
-int acertos=0,erros=0;
+int acertos;
 
 for (int i=0;i<5;i++){
         for (int j=0;j<10;j++){
@@ -12,4 +12,13 @@ for (int i=0;i<5;i++){
         }
 }
 
+
+for (int i=0;i<5;i++){
+        acertos =0;
+        for (int j=0;j<10;j++){
+           if (prova[i][j] == gabarito[j])
+           acertos ++;
+        }
+ printf ("Alunno %d acertou %d",i,acertos);
+}
 }
